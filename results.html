@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Results</title>
+
+    <link rel="stylesheet" href="resultsStyle.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <canvas class="confetti" id="canvas"></canvas>
+
+    <div class="result-container">
+        <h1>Your Exam Results</h1>
+        <div class="score-message">
+            <p>Your score: <span id="userScore"></span></p>
+            <p class="pass-message" id="passMessage" style="display: none;"></p>
+            <p class="fail-message" id="failMessage" style="display: none;"></p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th><i class="fa-solid fa-list" style="color: #84d7b0;"></i> Total Questions</th>
+                    <th><i class="fa-regular fa-circle-check" style="color: #33c71f;"></i> Correct</th>
+                    <th><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> Wrong</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="totalQ"></td>
+                    <td id="rightA"></td>
+                    <td id="wrongA"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <audio id="myAudio" autoplay style="display: none;">
+        Your browser does not support the audio element.
+      </audio> -->
+
+    <!-- <div class="Wrong-questions" style="display: block;">
+        <div class="qDiv"></div>
+        <div class="Wrong-answers"></div>
+    </div> -->
+
+
+
+    <script src="results.js"></script>
+</body>
+
+</html>

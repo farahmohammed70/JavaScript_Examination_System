@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="./ExamAssets/Examstyle.css">
+</head>
+<body>
+    <div class="top-container">
+        <progress class="progress" value="0" max="100"></progress>
+        <div>
+            <span class="timer" id="timer"></span>
+        </div>
+    </div>
+    <div class="questions-container">
+        <div class="marked-questions"><div><span>marked questions</span></div></div>
+        <div class="question">
+            <span>Question</span>
+        </div>
+        <div class="content">
+            <div class="answers">
+            </div>
+        <div class="buttons">
+            <button type="button" id="previous">previous</button>
+            <span class="question-number"></span>
+            <button type="button" id="next">next</button>
+            <button type="button" id="mark">mark</button>
+        </div>
+        </div>
+    </div>
+    <button type="submit" id="submit">submit</button>
+    <script src="./ExamAssets/jquery-3.7.1.js"></script>
+    <script src="./ExamAssets/Examscript.js"></script>
+</body>
+</html>

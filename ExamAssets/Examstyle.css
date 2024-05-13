@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    background-color: #263D42;
+}
+
+.top-container{
+    width: 100%;
+    text-align: center;
+}
+.question{
+    width: 70%;
+    font-size: medium;
+    font-weight: bold;
+}
+.questions-container{
+    /* max-width: 600px; */
+    position: relative;
+    width: 90%;
+    height: 80%;
+        margin: 10px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #2d21ce;
+        
+}
+.marked-questions{
+        text-align: center;
+        float: right;
+        padding: 10px;
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        /* background-color: #9b94fd; */
+        background-color: #BDBBB0;
+        border-top-right-radius:8px;
+        border-bottom-right-radius: 8px ;
+        overflow:hidden;
+}
+.delete-btn{
+    position: absolute;
+    display: inline-block;
+    left:80%;
+    color: wheat;
+}
+.delete-btn:hover{
+    background-color: #7870d3;
+        cursor: pointer;
+}
+.marked-questions div{
+    padding: 10px;
+}
+.marked-questions-content{
+    padding: 10px;
+    border: 1px solid #0f0760;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #263D42;
+    color: white;
+}
+.marked-questions-content:hover{
+    background-color:#7870d3 ;
+    cursor: pointer;
+}
+.buttons{
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    padding: 10px;
+    bottom: 0;
+    /* left:132px; */
+}
+.answers div{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    border: 1px solid #6258f4;
+    background-color: #D2D7DF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.answers div label{
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+}
+.answers div label:hover {
+    cursor: pointer;
+}
+.answers div:hover {
+    background-color: #9e9aeb;
+}
+.timer{
+    color: white;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 30%;
+    top:30%;
+    /* height: 50%; */
+    left: 25%;
+}
+input[type="radio"] {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4452ea;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 5px;
+    cursor: pointer;
+    right: 5%;
+}
+
+ /* Create a check mark for the checkbox-like radio button */
+input[type="radio"]::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    background-color: #2d21ce;
+    color: #e1efe2;
+    opacity: 0;
+    
+}
+
+ /* Show the check mark when the radio button is checked */
+input[type="radio"]:checked::before {
+    opacity: 1;
+}
+input[type="radio"]:checked{
+    background-color: #2d21ce;
+}
+button{
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #4caf50;
+        border: 2px solid #4caf50;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+}
+button:hover{
+        background-color: #45a049;
+        border-color: #45a049;
+}
+#submit{
+    background-color: green;
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
+#submit:hover{
+    background-color: rgb(2, 76, 2);
+    border-color: #45a049;
+    cursor:pointer;
+}
+.question-number{
+    border: 1px solid ;
+    padding: 10px;
+    width: 10px;
+    color: white;
+    background-color: #263D42;
+}
+progress {
+    width: 90%;
+    height: 1em;
+    appearance: none;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border:2px solid var(--webkit-progress-value-color);
+    
+    background-color: white;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--webkit-progress-value-color);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-transition: width 0.5s linear, background-color 0.5s linear;
+    -moz-transition: width 0.5s linear, background-color 0.5s linear;
+    -ms-transition: width 0.5s linear, background-color 0.5s linear;
+    -o-transition: width 0.5s linear, background-color 0.5s linear;
+    transition: width 0.5s linear, background-color 0.5s linear;
+}
+@media screen and (min-width: 500px) and (max-width:700px ) {
+    .buttons {
+        left: 0;
+    }
+}
+@media screen and (min-width: 1535px) {
+    .buttons{
+        left:29%
+    }
+}
+/* @media  (min-width:1807px ) {
+    .buttons {
+        left: 33%
+    }
+} */

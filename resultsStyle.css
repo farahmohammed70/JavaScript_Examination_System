@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+    flex-direction: column;
+    gap: 10em 0em;
+}
+
+.result-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20em;
+    margin-bottom: 20em;
+    /* margin-left: 15%; */
+    z-index: 2;
+    display: block;
+    position: fixed;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    padding-left: 55px;
+}
+
+th i {
+    position: absolute;
+    left: 12px;
+    top: 30%;
+    font-size: 25px;
+}
+
+th {
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.answers div {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    /* width: 100%; */
+    border: 1px solid #6258f4;
+    background-color: #b8b5eb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.qDiv {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #2d21ce;
+
+}
+
+.answer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-label {
+    order: 1; /* Display on the left */
+    display: inline-block;
+    /* width: inherit; */
+    /* height: inherit; */
+}
+
+.answer-checkbox {
+    display: inline-block;
+    order: 2; /* Display on the right */
+}
+
+/* .Wrong-questions{
+
+ } */
